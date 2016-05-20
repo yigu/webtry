@@ -1,0 +1,195 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />  
+    <title>Beautiful Pice</title>  
+    <script type="text/javascript" src="../js/libs/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/pice.cycle.css">
+
+    <link rel="stylesheet" type="text/css" href="../css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="../css/slicebox.css" />
+    <link rel="stylesheet" type="text/css" href="../css/custom.css" />
+    <script type="text/javascript" src="../js/modernizr.custom.46884.js"></script>
+<style type="text/css">
+#fixImg{
+    /*position: fixed;*/
+    display: none;
+    z-index: 20;
+    width: 150px;
+    right: 50px;
+    top: 50px;
+    border-radius: 30px;
+}
+#p1{
+    background:#FFA0A0;
+    background-image: url(../img/trees.jpg);
+    background-position: center;
+    text-align:center;
+}
+#p2{
+    background:#9595FF;
+    background-image: url(../img/fancy_deboss.png);
+}
+#p3{
+    background:#FFFF8D;
+}
+#girl1{
+    margin-top:150px;
+    width: 150px;
+    border-radius: 30px;
+}
+#girl1Say1{
+    color: yellow;
+    font-size: 1.5em;
+    animation: girl1Say1 2s infinite;
+    -webkit-animation: girl1Say1 2s infinite;
+}
+@keyframes girl1Say1{
+    0% {margin-top: 0px}
+    50% {margin-top: 15px;color: #FFBD77}
+    100% {margin-top: 0px}
+}
+@-webkit-keyframes girl1Say1{
+    0% {margin-top: 0px}
+    50% {margin-top: 15px;color: #FFBD77}
+    100% {margin-top: 0px}
+}
+#girl1:hover{
+    animation: shake 0.3s linear 0s infinite alternate;
+    -webkit-animation: shake 0.3s linear 0s infinite alternate;
+}
+@keyframes shake
+{
+0% {transform: rotate(-10deg);}
+100%{transform: rotate(10deg);}
+}
+@-webkit-keyframes shake
+{
+0% {-webkit-transform: rotate(-10deg);}
+100%{-webkit-transform: rotate(10deg);}
+}
+
+#p2 h3{
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+</style>
+</head>  
+<body> 
+<img src="../img/test.gif" id="fixImg">
+<div class="piceCycle">
+    <div id="p1" class="PCItem active">
+        <marquee direction="up" behavior="scroll" scrollamount="2" scrolldelay="5" loop="-1" width="50%" height="50" style="text-align: center;color: #FBFF4F;margin-top: 30px;font-size: 2em;">
+        三三520，快鼠标滚动看看吧^_^
+        </marquee><br/>
+        <img src="../img/girl1.jpg" id="girl1">
+        <p id="girl1Say1">仙女下凡</p>
+    </div>
+    <div id="p2" class="PCItem">
+        <h3>见之，喜之，念之，恋之，爱之，一辈子</h3>
+
+        <div class="wrapper">
+            <ul id="sb-slider" class="sb-slider">
+                <li>
+                    <img src="../img/slide1.png" alt="image1"/>
+                    <div class="sb-description">
+                        <h4>蒹葭苍苍，白露为霜，所谓伊人，在水一方。溯洄从之，道阻且长。溯游从之，宛在水中央。<br/>蒹葭萋萋，白露未晞，所谓伊人，在水之湄。溯洄从之，道阻且跻。溯游从之，宛在水中坻。</h4>
+                    </div>
+                </li>
+                <li>
+                    <img src="../img/slide2.png" alt="image2"/>
+                    <div class="sb-description">
+                        <h4>纤云弄巧，飞星传恨，银汉迢迢暗度。金风玉露一相逢，便胜却人间无数。<br/>柔情似水，佳期如梦，忍顾鹊桥归路。两情若是久长时，又岂在朝朝暮暮。</h4>
+                    </div>
+                </li>
+                <li>
+                    <img src="../img/slide3.png" alt="image2"/>
+                    <div class="sb-description">
+                        <h4>相见时难别亦难，东风无力百花残。春蚕到死丝方尽，蜡炬成灰泪始干。<br/>晓镜但愁云鬓改，夜吟应觉月光寒。蓬山此去无多路，青鸟殷勤为探看。</h4>
+                    </div>
+                </li>
+                <li>
+                    <img src="../img/slide4.png" alt="image2"/>
+                    <div class="sb-description">
+                        <h4>伫倚危楼风细细。望极春愁，黯黯生天际。草色烟光残照里。无言谁会凭阑意。<br/>拟把疏狂图一醉。对酒当歌，强乐还无味。衣带渐宽终不悔。为伊消得人憔悴。</h4>
+                    </div>
+                </li>
+                <li>
+                    <img src="../img/slide5.png" alt="image2"/>
+                    <div class="sb-description">
+                        <h4>关关雎鸠，在河之洲。窈窕淑女，君子好逑。参差荇菜，左右流之。窈窕淑女，寤寐求之。求之不得，寤寐思服。悠哉悠哉，辗转反侧。<br/>参差荇菜，左右采之。窈窕淑女，琴瑟友之。参差荇菜，左右芼之。窈窕淑女，钟鼓乐之。</h4>
+                    </div>
+                </li>
+                <li>
+                    <img src="../img/slide6.png" alt="image2"/>
+                    <div class="sb-description">
+                        <h4>锦瑟无端五十弦，一弦一柱思华年。庄生晓梦迷蝴蝶，望帝春心托杜鹃。<br/>沧海月明珠有泪，蓝田日暖玉生烟。此情可待成追忆，只是当时已惘然。</h4>
+                    </div>
+                </li>
+                <li>
+                    <img src="../img/slide7.png" alt="image2"/>
+                    <div class="sb-description">
+                        <h4>我住长江头，君住长江尾。日日思君不见君，共饮长江水。<br/>此水几时休，此恨何时已。只愿君心似我心，不负相思意。</h4>
+                    </div>
+                </li>
+                <li>
+                    <img src="../img/slide8.png" alt="image2"/>
+                    <div class="sb-description">
+                        <h4>皑如山上雪，皎若云间月。闻君有两意，故来相决绝。今日斗酒会，明旦沟水头。<br/>躞蹀御沟上，沟水东西流。凄凄复凄凄，嫁娶不须啼。愿得一心人，白头不相离。</h4>
+                    </div>
+                </li>
+                
+            </ul>
+            <div id="shadow" class="shadow"></div>
+            <div id="nav-arrows" class="nav-arrows">
+                <a href="#">Next</a>
+                <a href="#">Previous</a>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+<script type="text/javascript" src="../js/libs/pice.cycle.js"></script>
+<script type="text/javascript">
+    var scroll = ["p1","p2"];
+    PiceCycle(scroll);
+</script>
+
+<script type="text/javascript" src="../js/jquery.slicebox.js"></script>
+<script type="text/javascript">
+$(function() {              
+    var Page = (function() {
+        var $navArrows = $( '#nav-arrows' ).hide(),
+            $shadow = $( '#shadow' ).hide(),
+            slicebox = $( '#sb-slider' ).slicebox( {
+                onReady : function() {
+                    $navArrows.show();
+                    $shadow.show();
+                },
+                orientation : 'r',
+                cuboidsRandom : true,
+                disperseFactor : 30
+            } ),                        
+            init = function() {
+                initEvents();                       
+            },
+            initEvents = function() {
+                // add navigation events
+                $navArrows.children( ':first' ).on( 'click', function() {
+                    slicebox.next();
+                    return false;
+                } );
+                $navArrows.children( ':last' ).on( 'click', function() {    
+                    slicebox.previous();
+                    return false;
+                } );
+            };
+            return { init : init };
+    })();
+    Page.init();
+});
+</script>
+</body>  
+</html> 
