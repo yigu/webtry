@@ -1,0 +1,93 @@
+html, body, .piceCycle {
+    margin: 0px;
+    height: 100%;
+    overflow-y: hidden;
+    font-family: "微软雅黑";
+}
+.piceCycle .active {
+    z-index: 5;
+}
+.piceCycle .activeFU {
+    z-index: 10;
+    animation: fadeFromUP 1s forwards;
+    -moz-animation: fadeFromUP 1s forwards;
+    -webkit-animation: fadeFromUP 1s forwards;
+    -o-animation: fadeFromUP 1s forwards;
+}
+.piceCycle .activeFD {
+    z-index: 10;
+    animation: fadeFromDown 1s forwards;
+    -moz-animation: fadeFromDown 1s forwards;
+    -webkit-animation: fadeFromDown 1s forwards;
+    -o-animation: fadeFromDown 1s forwards;
+}
+@keyframes fadeFromUP {
+    0% {
+        top: -100%;
+    }
+    100% {
+        top: 0px;
+    }
+}
+@-moz-keyframes fadeFromUP {
+    0% {
+        top: -100%;
+    }
+    100% {
+        top: 0px;
+    }
+}
+@-webkit-keyframes fadeFromUP {
+    0% {
+        top: -100%;
+    }
+    100% {
+        top: 0px;
+    }
+}
+@-o-keyframes fadeFromUP {
+    0% {
+        top: -100%;
+    }
+    100% {
+        top: 0px;
+    }
+}
+@keyframes fadeFromDown {
+    0% {
+        top: 100%;
+    }
+    100% {
+        top: 0px;
+    }
+}
+@-moz-keyframes fadeFromDown {
+    0% {
+        top: 100%;
+    }
+    100% {
+        top: 0px;
+    }
+}
+@-webkit-keyframes fadeFromDown {
+    0% {
+        top: 100%;
+    }
+    100% {
+        top: 0px;
+    }
+}
+@-o-keyframes fadeFromDown {
+    0% {
+        top: 100%;
+    }
+    100% {
+        top: 0px;
+    }
+}
+.PCItem {
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    position: absolute;
+}
