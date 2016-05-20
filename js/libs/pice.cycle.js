@@ -13,7 +13,7 @@ var PiceCycle = (function() {
     var ARRAYID = [];
     var screenHeight;
     var times = 0;
-    var SUM, Y;
+    var SUM = 0, Y = 0;
     //browser
     document.addEventListener('DOMMouseScroll', beautyScroll, false); //firefox  
     document.onmousewheel = beautyScroll; //ie chrome  
@@ -55,6 +55,8 @@ var PiceCycle = (function() {
             console.log("下");
             nextFromDown();
         }
+        SUM = 0;
+        Y = 0;
     }, false);
 
     function nextFromUP() {
